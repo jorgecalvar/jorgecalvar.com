@@ -1,17 +1,43 @@
 import './Section.css'
 import datadogLogo from '../assets/datadog-logo.png'
+import databricksLogo from '../assets/databricks-logo.png'
 
 function Work(): JSX.Element {
   return (
     <div className="section">
       <div className="section-header">
-        <span className="section-title">WORK(1)</span>
+        <span className="section-title">WORK(2)</span>
         <span className="section-subtitle">Professional Experience Manual Page</span>
       </div>
       
       <div className="man-content">
         <div className="man-section">
           <h2 className="man-heading">CURRENT POSITION</h2>
+          <div className="work-item">
+            <div className="work-header">
+              <div className="work-company-wrapper">
+                <img 
+                  src={databricksLogo} 
+                  alt="Databricks" 
+                  className="company-logo"
+                  onError={(e) => {
+                    // Fallback if logo doesn't load
+                    e.currentTarget.style.display = 'none'
+                  }}
+                />
+                <span className="work-company">Databricks</span>
+              </div>
+              <span className="work-duration">January 2026 - Present</span>
+            </div>
+            <p className="work-description">
+              Software engineer working in the Lakebase product org. Improving developer experience for people creating data and AI apps on
+              Databricks.
+            </p>
+          </div>
+        </div>
+
+        <div className="man-section">
+          <h2 className="man-heading">PAST POSITIONS</h2>
           <div className="work-item">
             <div className="work-header">
               <div className="work-company-wrapper">
@@ -26,7 +52,7 @@ function Work(): JSX.Element {
                 />
                 <span className="work-company">Datadog</span>
               </div>
-              <span className="work-duration">July 2023 - Present</span>
+              <span className="work-duration">July 2023 - January 2026</span>
             </div>
             <p className="work-description">
               Backend engineer in the Software Delivery product org. Working on{' '}
