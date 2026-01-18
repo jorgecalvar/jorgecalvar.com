@@ -29,8 +29,7 @@ function About({ onNavigate }: AboutProps): JSX.Element {
           <h2 className="man-heading">DESCRIPTION</h2>
           <p className="man-text">
             A software engineer with a passion for building impactful solutions and 
-            continuously learning. Currently working at Datadog, where I've been 
-            contributing to innovative projects for the past 2 years.
+            continuously learning.
           </p>
         </div>
 
